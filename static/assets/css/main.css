@@ -1,0 +1,133 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, center, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td{
+		margin: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	html, body {
+		height: 100%;
+		overflow-x: hidden;
+		width: 100%;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: url("questionmark.jpg") no-repeat center fixed;
+		background-size: cover;
+		padding: 6em 4em 4em 4em;
+	}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 15pt;
+}
+th, td {
+    padding: 15px;
+}
+
+ol li{
+    color: #000000;
+    font-size: 40px;
+}
+/* Type */
+
+	body, textarea{
+		color: #131313;
+		font-family: "Lucida";
+		font-size: 16pt;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+		line-height: 1.65em;
+	}
+	a {
+		color: #131313;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+			color: #e41818 !important;
+			text-decoration: none;
+		}
+
+	h1, h2{
+		color: #312528;
+		font-family: "Lucida Console";
+		font-weight: 700;
+		text-align: center;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+    h3, h4, h5, h6 {
+		color: #312528;
+		font-family: "Lucida Console";
+		font-weight: 700;
+		text-align: left;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+hr {
+		border: 0;
+		border-bottom: solid 2px rgba(255, 255, 255, 0.35);
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 3em 0;
+		}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		background-color: #92888b;
+		border-radius: 6px;
+		margin: 5px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		height: 2.75em;
+		line-height: 2.75em;
+		padding: 0 1.125em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			background-color: #d61919;
+		}
+

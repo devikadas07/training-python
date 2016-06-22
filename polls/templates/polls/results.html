@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/assets/css/main.css" />
+<h3>
+Q: {{ question.question_text }}
+</br>
+</br>
+RESULTS
+</h3>
+<table style="width:70%"> 
+<tr>
+<th> Choice </th>
+<th> Votes </th>
+</tr>
+{% for choice in question.choice_set.all %}
+	<tr>
+	<td>{{ choice.choice_text }} </td>	
+	<td>{{ choice.votes }} </td>
+	</tr>
+{% endfor %}
+</table>
+<form action="{% url 'polls:index'%}" method="get">
+<input type="submit" value="Go Back" />
+</form>

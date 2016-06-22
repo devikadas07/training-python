@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/static/assets/css/main.css" />
+
+<form action="/" method="get">
+
+
+<input type="submit" value="Home" />
+</form>
+<h1 > QUESTIONNAIRE </h1>
+{% if latest_question_list %}
+    <ol>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}" style="font-size: 35px">{{ question.question_text }}</a></li>
+        </br>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

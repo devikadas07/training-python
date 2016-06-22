@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/static/assets/css/main.css" />
+{% load static %}
+<img src="{% static "images/QBlogo.svg" %}" alt="QBurst Logo" style="margin:0px auto;display:block;width:304px;height:228px;">
+<h1>POLLS APP</h1>
+<h2>SURVEY</h2>
+<h2>PRODUCT: VIRTUAL GLASSES</h2>
+<h1>
+<body>
+	<form action="{% url 'polls:index'%}" method="get">
+	<input type="submit" value="Enter Polls" />
+	</form>
+	<form action="/admin" method="get">
+	<input type="submit" value="Admin" />
+	</form>
+</body>
+</h1>
