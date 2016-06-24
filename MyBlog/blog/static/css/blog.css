@@ -42,7 +42,13 @@ p {
     font-size: 20px;
     color: #fff;
 }
+input {
+color: #2b1a1a;
+}
+textarea {
+    color: #2b1a1a;
 
+}
 
 .post {
     margin-bottom: 70px;
